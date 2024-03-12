@@ -1,0 +1,42 @@
+TRUNCATE `bans`;
+TRUNCATE `cars`;
+TRUNCATE `clans`;
+TRUNCATE `emails`;
+TRUNCATE `faction_logs`;
+TRUNCATE `frequencies`;
+TRUNCATE `kenny_actions`;
+TRUNCATE `kenny_applications`;
+TRUNCATE `kenny_badges`;
+TRUNCATE `kenny_comments`;
+TRUNCATE `kenny_complaints`;
+TRUNCATE `kenny_logs`;
+TRUNCATE `kenny_market`;
+TRUNCATE `kenny_questions`;
+TRUNCATE `kenny_recovery`;
+TRUNCATE `kenny_suspend`;
+TRUNCATE `kenny_tickets`;
+TRUNCATE `kenny_unbans`;
+TRUNCATE `punishlogs`;
+TRUNCATE `users`;
+TRUNCATE `clanhqs`;
+TRUNCATE `creatorcodes`;
+
+UPDATE `houses` SET `Owner`='Server',`Rent`='1', `Prices` = '0', `Takings` = '0', `GarageX` = '0', `GarageY` = '0', `GarageZ` = '0';
+
+UPDATE `bizz` SET `Till`='0',`Owner`='Server',`EntranceCost`='1', `Prices` = '0';
+
+UPDATE `stock` SET `stock` = 10;
+
+UPDATE `turfs` SET Owned = 2 WHERE `ID` < 10;
+
+UPDATE `turfs` SET Owned = 3 WHERE `ID` >= 10;
+
+UPDATE `factions` SET `Mats` = 0, `Drugs` = 0, `Application` = 0, `LeaderApp` = 0, `gMotd` = '', `MinLevel` = 1;
+
+UPDATE `jobs` SET `Owner` = 'Server', `Balance` = 0, `Price` = 0, `LastProp` = 0, `LastDay` = 0;
+
+UPDATE `clanzones` SET `zoneClan` = 0;
+
+UPDATE `billboards` SET `Owner` = 'Server', `Price` = '0', `Text` = 'Text';
+
+UPDATE `server_vars` SET GlobalGoal = 0, DailyQuests = '0|0|0|0|0|0|0', GiftHunt = '0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0'
